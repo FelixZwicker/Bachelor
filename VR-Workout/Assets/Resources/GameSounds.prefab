@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6091652976454125957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5703071307132271228}
+  - component: {fileID: 1246523456040896346}
+  m_Layer: 0
+  m_Name: GameSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5703071307132271228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091652976454125957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.83004284, y: 6.850976, z: -7.8828907}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1246523456040896346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091652976454125957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a13602e840f53c4e9c9a8cfa66083b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24300002, guid: 1e4c816a07d72204fae84c1b2abb524b, type: 2}
+  soundAudioClipArray:
+  - sound: 0
+    audioClip: {fileID: 8300000, guid: e1a25b4efc6e9704c969cc488efa8b43, type: 3}
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: 590aee74758dd2d4c81d67ccd09776f5, type: 3}
+  - sound: 2
+    audioClip: {fileID: 8300000, guid: e56ab0711ff2f3f439050fb67bf0e2fc, type: 3}
+  - sound: 3
+    audioClip: {fileID: 8300000, guid: 0041e8e0d58935a48b79194659eda0ad, type: 3}
+  - sound: 4
+    audioClip: {fileID: 8300000, guid: 374cb945f74433a40af1bd6e29b4e772, type: 3}
+  - sound: 5
+    audioClip: {fileID: 8300000, guid: d7ba50d71a226ad468e57dcb82ba8f3e, type: 3}

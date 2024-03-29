@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Workout/Scenes/MainMenu.unity
+    guid: e8ccb68ea43b84045a06fb9959c761ca
+  - enabled: 1
+    path: Assets/Workout/Scenes/Meditation.unity
+    guid: 25c1efa4f4fff1b4ebb7b30322453349
+  - enabled: 1
+    path: Assets/Workout/Scenes/LoadingScreen.unity
+    guid: c44098e91ff3444478eec19e615b3c07
+  - enabled: 1
+    path: Assets/Workout/Scenes/Story.unity
+    guid: 70dcac1175f655f4499f1f2d3f883305
+  - enabled: 1
+    path: Assets/Workout/Scenes/CoolDown.unity
+    guid: d4bed3f9771355c42a6c786d087c966d
+  - enabled: 1
+    path: Assets/Workout/Scenes/Punching.unity
+    guid: 2092e13e6e1747c4c96cb3393becff73
+  - enabled: 1
+    path: Assets/Workout/Scenes/Slicing.unity
+    guid: 8aa3b1d5615145c41b039d180282367d
+  - enabled: 1
+    path: Assets/Workout/Scenes/MeditationOnly.unity
+    guid: 244701e74ea10fd44bccd8b19648e0d0
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c0f5809fb272cc448a682c9f84261ded, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d29279d34418d3f479cfd2d1cc9a9343, type: 2}
