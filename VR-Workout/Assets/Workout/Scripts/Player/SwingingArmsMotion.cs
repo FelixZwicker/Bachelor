@@ -15,7 +15,7 @@ public class SwingingArmsMotion : MonoBehaviour
     private Vector3 positionCurrentFrameLeftHand;
     private Vector3 positionCurrentFrameRightHand;
 
-    private float Speed = 4;
+    private float speed = 4;
     private float leftHandDistance;
     private float rightHandDistance;
     private float leftHandMovement;
@@ -48,17 +48,17 @@ public class SwingingArmsMotion : MonoBehaviour
         positionPreviousFrameLeftHand = leftHand.transform.position;
         positionPreviousFrameRightHand = rightHand.transform.position;
 
-        Debug.Log(leftHandMovement);
         // check if one hand moved upwards and the other downwards, and if the minimum distance threshold is met
         if (((leftHandMovement > 0 && rightHandMovement < 0) ||
             (leftHandMovement < 0 && rightHandMovement > 0)) && (leftHandDistance >= minDistanceThreshold && rightHandDistance >= minDistanceThreshold))
         {
             // aggregate to get hand speed only on the y-axis
+            // could be used for controlling the movement speed
                 // float HandSpeed = (leftHandMovement + rightHandMovement) * 0.5f;
 
             if (Time.timeSinceLevelLoad > 1f)
             {
-                transform.position += forwardDirection.transform.forward * Speed * Time.deltaTime;
+                transform.position += forwardDirection.transform.forward * speed * Time.deltaTime;
             }
         }
     }

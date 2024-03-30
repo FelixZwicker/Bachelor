@@ -31,7 +31,7 @@ public class Meditation : MonoBehaviour
 
     IEnumerator WaitForBreathingExercise()
     {
-        yield return new WaitForSeconds(instructions.GetVoicelineLength(Instructions.Voiceline.Breathing));
+        yield return new WaitForSeconds(instructions.GetVoicelineLength(Instructions.Voiceline.Breathing) + 2f);
         breathingCanvas.SetActive(false);
         instructions.PlayVoiceline(Instructions.Voiceline.MeditationEnd);
         continueButton.SetActive(true);
