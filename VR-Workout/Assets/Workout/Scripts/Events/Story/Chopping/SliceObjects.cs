@@ -15,6 +15,7 @@ public class SliceObjects : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Perform a linecast to detect objects in the slicing path
         bool hasHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);
         if (hasHit)
         {
@@ -23,7 +24,7 @@ public class SliceObjects : MonoBehaviour
         }
     }
 
-    //destroy gameobject and create two new gameobjects 
+    // Method to slice the target object
     public void Slice(GameObject target)
     {
         Vector3 velocity = velocityEstimator.GetVelocityEstimate();
@@ -44,7 +45,7 @@ public class SliceObjects : MonoBehaviour
         }
     }
 
-    //setup new gameobject
+    // Method to setup physical properties for the sliced component
     public void SetupSlicedComponent(GameObject slicedObject)
     {
         Rigidbody rb = slicedObject.AddComponent<Rigidbody>();

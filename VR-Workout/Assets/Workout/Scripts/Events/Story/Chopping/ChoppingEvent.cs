@@ -11,6 +11,7 @@ public class ChoppingEvent : EventHandling
 
     private void Update()
     {
+        // Check if there are no more game objects tagged as "ChoppingWood"
         if (GameObject.FindGameObjectsWithTag("ChoppingWood").Length == 0 && !hasFinished)
         {
             hasFinished = true;
@@ -26,10 +27,12 @@ public class ChoppingEvent : EventHandling
 
     protected override void EndActivity()
     {
+        // Notify the base class that the activity is over
         ActivityOver(1);
         enabled = false;
     }
 
+    // Coroutine to wait for instructions before starting the activity
     protected override IEnumerator WaitForInstructions()
     {
         Destroy(triggerCollider);

@@ -9596,7 +9596,7 @@ MonoBehaviour:
   _whenUnselect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1875100113}
+      - m_Target: {fileID: 1781234872}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: BackToMainMenu
         m_Mode: 1
@@ -9811,7 +9811,7 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1875100114}
+      - m_Target: {fileID: 1781234878}
         m_TargetAssemblyTypeName: PauseHandler, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -11837,13 +11837,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781234871}
-  - component: {fileID: 1781234870}
   - component: {fileID: 1781234872}
   - component: {fileID: 1781234875}
   - component: {fileID: 1781234873}
   - component: {fileID: 1781234874}
   - component: {fileID: 1781234876}
   - component: {fileID: 1781234877}
+  - component: {fileID: 1781234878}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11851,19 +11851,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1781234870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781234869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e2e06235a78ab146833e5c4c4b5090b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
 --- !u!4 &1781234871
 Transform:
   m_ObjectHideFlags: 0
@@ -12053,6 +12040,19 @@ MonoBehaviour:
   totalScore: 0
   targetsHit: 0
   targetsMissed: 0
+--- !u!114 &1781234878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781234869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2e06235a78ab146833e5c4c4b5090b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1875100111}
 --- !u!1 &1784939348
 GameObject:
   m_ObjectHideFlags: 0
@@ -12602,8 +12602,6 @@ GameObject:
   - component: {fileID: 1875100117}
   - component: {fileID: 1875100116}
   - component: {fileID: 1875100115}
-  - component: {fileID: 1875100114}
-  - component: {fileID: 1875100113}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -12629,31 +12627,6 @@ Transform:
   m_Father: {fileID: 7192818547946920153}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 6.21, y: 0, z: 0}
---- !u!114 &1875100113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875100111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37817c40c246cf4c8a447219ff04d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1875100114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875100111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e2e06235a78ab146833e5c4c4b5090b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
 --- !u!114 &1875100115
 MonoBehaviour:
   m_ObjectHideFlags: 0

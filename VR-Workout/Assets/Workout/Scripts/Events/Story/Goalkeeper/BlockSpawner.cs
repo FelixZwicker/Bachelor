@@ -14,14 +14,17 @@ public class BlockSpawner : MonoBehaviour
   
     void Update()
     {
+        // Check if it's time to spawn a new block
         if (timer > spawnIntervall)
         {
             GameObject spawnObject = spawnObjects[Random.Range(0, spawnObjects.Length)];
-            if(spawnObject.name != "cube")
+            // Spawn a regular block if it's not a cube
+            if (spawnObject.name != "cube")
             {
                 GameObject target = Instantiate(spawnObject, points[Random.Range(0, points.Length)]);
                 target.transform.localPosition = Vector3.zero;
             }
+            // Spawn an evasion block if it's a cube
             else
             {
                 GameObject evasionBlock = Instantiate(spawnObject, centerSpawnpoint);

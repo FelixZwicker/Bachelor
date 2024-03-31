@@ -19,12 +19,12 @@ public class ASyncLoader : MonoBehaviour
         }
     }
 
-    //coroutine to load a level asynchronously
+    // Coroutine to load a level asynchronously
     private IEnumerator LoadLevelAsync(string levelToLoad)
     {
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
 
-        //wait until the loading operation is complete and update the slider
+        // wait until the loading operation is complete and update the slider
         while (!loadOperation.isDone)
         {
             float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);

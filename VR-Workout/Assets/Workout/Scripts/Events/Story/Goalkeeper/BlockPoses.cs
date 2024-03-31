@@ -10,6 +10,7 @@ public abstract class BlockPoses : MonoBehaviour
     //check collision with hands
     protected abstract void OnTriggerEnter(Collider other);
 
+    // Method called when the block is hit
     public void Hit()
     {
         hitCounter.targetsHit += 1;
@@ -19,6 +20,7 @@ public abstract class BlockPoses : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Method called when the block is missed
     public void Miss()
     {
         StartCoroutine(WaitForDestruction());
@@ -28,6 +30,7 @@ public abstract class BlockPoses : MonoBehaviour
         SoundManager.PlaySounds(SoundManager.Sound.Miss);
     }
 
+    // Coroutine to destroy missed targets
     IEnumerator WaitForDestruction()
     {
         yield return new WaitForSeconds(2f);

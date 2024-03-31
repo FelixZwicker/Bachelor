@@ -9,13 +9,16 @@ public class Meditation : MonoBehaviour
     public GameObject continueButton;
 
     private float mountainViewTime = 5f;
+    private float breathingExtraTime = 2f;
 
     private void Start()
     {
+        // Plays the introduction voice line and then starts the delay before the breathing exercise
         instructions.PlayVoiceline(Instructions.Voiceline.Introduction);
         StartCoroutine(StartingPause());
     }
 
+    // Coroutine for the delay before the breathing exercise
     IEnumerator StartingPause()
     {
         yield return new WaitForSeconds(instructions.GetVoicelineLength(Instructions.Voiceline.Introduction) + mountainViewTime);
@@ -29,9 +32,10 @@ public class Meditation : MonoBehaviour
         StartCoroutine(WaitForBreathingExercise());
     }
 
+    // Coroutine for waiting for the end of the breathing exercise
     IEnumerator WaitForBreathingExercise()
     {
-        yield return new WaitForSeconds(instructions.GetVoicelineLength(Instructions.Voiceline.Breathing) + 2f);
+        yield return new WaitForSeconds(instructions.GetVoicelineLength(Instructions.Voiceline.Breathing) + breathingExtraTime);
         breathingCanvas.SetActive(false);
         instructions.PlayVoiceline(Instructions.Voiceline.MeditationEnd);
         continueButton.SetActive(true);

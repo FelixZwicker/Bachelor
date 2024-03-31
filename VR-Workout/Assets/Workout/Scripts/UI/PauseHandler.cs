@@ -6,7 +6,7 @@ public class PauseHandler : MonoBehaviour
 {
     public GameObject pauseMenu;
 
-    //oculus integrated pause button
+    // oculus integrated pause button
     private const OVRInput.Button start = OVRInput.Button.Start;
     private bool menuOpen = false;
 

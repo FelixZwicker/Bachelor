@@ -29,7 +29,7 @@ public abstract class EventHandling : MonoBehaviour
 
     protected abstract void EndActivity();
 
-    //update story
+    // Methode to track solved workouts
     public void ActivityOver(int eventID)
     {
         if(eventID == 1)
@@ -56,6 +56,7 @@ public abstract class EventHandling : MonoBehaviour
         }
     }
 
+    // Methode to set player position and deactivate moving script
     public void SetPlayerPosition()
     {
         swingingArmsMotion.enabled = false;

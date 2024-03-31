@@ -22,6 +22,7 @@ public class HitCounter : MonoBehaviour
 
     private void Update()
     {
+        // prevents the score to go below 0
         if(totalScore <= -1)
         {
             totalScore = 0;
@@ -29,6 +30,7 @@ public class HitCounter : MonoBehaviour
         }
     }
 
+    // Methode to update canvas values
     public void UpdateGUI()
     {
         scoreText.text = totalScore.ToString();

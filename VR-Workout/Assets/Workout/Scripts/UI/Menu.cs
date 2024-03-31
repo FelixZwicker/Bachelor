@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//stores all sceneManager load operations
+// Stores all sceneManager load operations
 public class Menu : MonoBehaviour
 {
     public void QuitGame()
@@ -43,6 +43,7 @@ public class Menu : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");
     }
 }
